@@ -11,18 +11,15 @@ Api documentation is automatically prepared for the created components, it creat
 
 ## Road map
 
-- [x] Setup support screen
+- [x] Quickly setup tool
 - [x] User management
 - [x] Api management
-- [x] Component management
-- [x] Creating modules
-     - [x] Multi module
-     - [x] Single module
-- [x] Edit module
-- [x] Plugin management
-- [ ] Interface language management (Default English)
+- [x] Module management
+     - [x] Multiple module management
+     - [x] Single module management
+- [x] Customized plugin management
 - [x] Interface customization
-
+- [x] Multi Language Data Management
 
 
 ## Features
@@ -64,37 +61,32 @@ Api documentation is automatically prepared for the created components, it creat
 
 ## Project Requirements
 1. Os:Centos7
-	 Ram : 2 Gb
-	Cpu : 4 Core
-	Disk : 20 Gb
-	Network : 100Mbit
+	 Ram : 1 Gb
+	Cpu : 2 Core
+	Disk : 5 Gb
 2. Engine:Nginx&Mysql&Php
-3. Technical information little. for install
 
 ## Setup steps
 
 1. Copy files to server Upload the files required for installation to the server completely.
 - If you using apache : use .htaccess
 - If you using nginx set index file fix.php:
-
+- 
 ```
 if (!-e $request_filename){
 	rewrite ^/([^?]*)$ /fix.php?url=$1 last; break;
 }
 ```
 
-Go to your install domain. domain.com/install Enter your database information to be installed
+Go to your install domain. domain.com/install So enter your database information to be installed
 
 Default Root Account : demo@demo.com | 123
 
-Import Sample Data
+Import sample data in sample folder on this project folder
 
 You can see the working structure of the system by uploading the sample data.
 
 Login > Settings > System Management and click Import (Go)
-
-
-[![](https://img.buymeacoffee.com/api/?url=aHR0cHM6Ly9pbWcuYnV5bWVhY29mZmVlLmNvbS9hcGkvP3VybD1hSFIwY0hNNkx5OWpaRzR1WW5WNWJXVmhZMjltWm1WbExtTnZiUzkxY0d4dllXUnpMM0J5YjJacGJHVmZjR2xqZEhWeVpYTXZNakF5TVM4d05DOHdOVEZsWkRWaVkyTXdOVEJqTmpjNE5tVmxZbVpqT0RWaVlqUTNabVZrTWk1cWNHVm4mc2l6ZT0zMDAmbmFtZT1DZW5naXorQUtDQU4=&creator=Cengiz+AKCAN&is_creating=Distributed%20Systems%20and%20Software%20Architecture&design_code=1&design_color=%23FF813F&slug=thevobos)](https://www.buymeacoffee.com/thevobos "![](https://img.buymeacoffee.com/api/?url=aHR0cHM6Ly9pbWcuYnV5bWVhY29mZmVlLmNvbS9hcGkvP3VybD1hSFIwY0hNNkx5OWpaRzR1WW5WNWJXVmhZMjltWm1WbExtTnZiUzkxY0d4dllXUnpMM0J5YjJacGJHVmZjR2xqZEhWeVpYTXZNakF5TVM4d05DOHdOVEZsWkRWaVkyTXdOVEJqTmpjNE5tVmxZbVpqT0RWaVlqUTNabVZrTWk1cWNHVm4mc2l6ZT0zMDAmbmFtZT1DZW5naXorQUtDQU4=&creator=Cengiz+AKCAN&is_creating=Distributed%20Systems%20and%20Software%20Architecture&design_code=1&design_color=%23FF813F&slug=thevobos)")
 
 ![](https://raw.githubusercontent.com/Vobo-Cloud/Platform-Beta/main/Screens/1.jpg)
 ![](https://raw.githubusercontent.com/Vobo-Cloud/Platform-Beta/main/Screens/2.jpg)
